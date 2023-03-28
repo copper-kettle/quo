@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="overflow-x-auto" lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,24 +12,24 @@
 	<link rel="stylesheet" href="styles/main.css">
 	<title>QUO</title>
 </head>
-<body class="h-screen font-['Roboto']" >
+<body class="h-screen font-['Roboto'] box-border relative overflow-x-hidden w-[100%]" >
 	<!-- HEADER===================================================
 	============================================================== -->
-	<div class="w-[93.5%] float-right pl-8 border-b">
+	<div class="w-full fixed top-0 left-16 z-10 pl-8 border border-b bg-white">
 		<header class="h-[67px] flex items-center">
-			<h1 class="text-base font-bold">ОБЗОР</h1>
+			<h1 class="text-lg font-bold">ОБЗОР</h1>
 		</header>
 	</div>
 <!-- ASIDE=========================================================
 =================================================================== -->
-	<aside class="float-left w-[6.5%] bg-black h-full flex flex-col justify-between">
+	<aside class="fixed top-0 w-16 bg-black h-full flex flex-col justify-between">
 
 		<div class="aside__head">
-			<div class="aside__title h-[84px] bg-[#ecf4ff] text-[#8c9bf2] flex items-center justify-center text-4xl">
+			<div class="aside__title h-[84px] bg-[#ecf4ff] text-[#8c9bf2] flex items-center justify-center text-[3vw]">
 				ДМ
 			</div>
 	<!-- aside menu -->
-			<nav class="text-[#dcdde0]">
+			<nav class="text-[#dcdde0] w-full z-10">
 				<ul>
 					<li>
 						<a href="">
@@ -38,7 +38,7 @@
 									<i aria-hidden="true" class="v-icon notranslate mdi mdi-home theme--light leading-none" style="font-size: 32px;"></i>
 								</div>
 								<div class="menu__text">
-									<p class="text-xs">Проекты</p>
+									<p class="text-xs">Обзор</p>
 								</div>
 							</div>
 						</a>
@@ -50,7 +50,7 @@
 									<i aria-hidden="true" class="v-icon notranslate mdi mdi-briefcase theme--light leading-none" style="font-size: 32px;"></i>
 								</div>
 								<div class="menu__text">
-									<p class="text-xs">Обзор</p>
+									<p class="text-xs">Проекты</p>
 								</div>
 							</div>
 						</a>
@@ -100,5 +100,35 @@
 			<img src="images/logo.png" alt="">
 		</div>
 	</aside>
+
+<!-- MAIN===========================================================
+==================================================================== -->
+	<main class="main bg-[#fbfcff] pt-7 pl-[2%] mt-12 ml-10 right-0 top-16">
+		<div class="main__wrapper w-[97%] bg-white shadow-[2px_2px_5px_#c3c3c3] ml-2.5 mt-2 pl-10 pt-8 border">
+			<h3 class="w-1/4 text-base leading-6 px-4 mb-3">Приветствую, Дмитрий</h3>
+			<!-- VIDEO================== -->
+			<div class="main__item w-full min-w-360px lg:w-2/3 xl:w-2/3 2xl:w-1/2 px-4 py-8 mt-3">
+				<h4 class="font-bold text-base leading-6">Вводное видео по работе с <br> сервисом</h4>
+
+				<div class="main__item-video w-full aspect-video">
+					<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/hMWB7pOV-PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- VIDEO=================== -->
+			<div class="main__item w-full min-w-360px lg:w-2/3 xl:w-2/3 2xl:w-1/2 px-4 py-8 mt-3">
+				<h4 class="font-bold text-base leading-6">Видео по редактированию <br> шаблона</h4>
+				<div class="main__item-video w-full aspect-video">
+					<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/PoUmTYZmA98" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+			<!-- VIDEO==================== -->
+			<div class="main__item w-full min-w-360px lg:w-2/3 xl:w-2/3 2xl:w-1/2 px-4 py-8 mt-3">
+				<h4 class="font-bold text-base leading-6">Подробное видео про создание <br> чат-бота в телеграм</h4>
+				<div class="main__item-video w-full aspect-video">
+					<iframe class="w-full aspect-video" src="https://www.youtube.com/embed/-Or5de8P1Ow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 </html>
